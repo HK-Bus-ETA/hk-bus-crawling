@@ -59,6 +59,7 @@ jobs:
             holiday.json
             routeFareList*
             routeList*
+            stopCandidates*
             stopList*
             stopMap*
             routeTime.json
@@ -69,6 +70,7 @@ jobs:
             ROUTE_BUS.xml
             route-ts/
             exits.mtr.json
+            0versions.json
       - name: Update MD5
         run: |
           md5sum routeFareList.min.json | cut -f1 -d ' ' | tr -d $'\n' > routeFareList.md5
@@ -86,6 +88,7 @@ jobs:
           routeFareList.alpha.md5  \
           CNAME \
           exits.mtr.json \
+          0versions.json \
           build/
       - name: cp route-ts into deployment folder
         run: cp -r route-ts build
