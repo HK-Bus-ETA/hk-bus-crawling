@@ -16,6 +16,8 @@ def get_stop_group(
   STOP_LIST_LIMIT = 50  # max number of stops in a group
 
   def get_stops_haversine_distance(stop_a, stop_b):
+    if stop_a['location']['lat'] == stop_b['location']['lat'] and stop_a['location']['lng'] == stop_b['location']['lng']:
+      return 0
     return haversine(
         (stop_a['location']['lat'], stop_a['location']['lng']),
         (stop_b['location']['lat'], stop_b['location']['lng']),
