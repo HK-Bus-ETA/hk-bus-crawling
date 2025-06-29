@@ -15,7 +15,7 @@ from crawl_utils import emitRequest
 
 async def routeCompare():
   a_client = httpx.AsyncClient(timeout=httpx.Timeout(30.0, pool=None))
-  r = await emitRequest("https://data.hkbus.app/routeFareList.min.json", a_client)
+  r = await emitRequest("https://crawling-data.hkbuseta.com/routeFareList.min.json", a_client)
   r.encoding = 'utf-8'
   oldDb = r.json()
   newDb = json.load(open('routeFareList.min.json', 'r', encoding='UTF-8'))
