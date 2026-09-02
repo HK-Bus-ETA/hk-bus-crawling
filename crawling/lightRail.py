@@ -12,7 +12,7 @@ from typing import List
 from crawl_utils import emitRequest
 
 # List of Circular Routes
-circularRoutes = ("705", "706")
+circularRoutes = ("610P*", "705", "706")
 
 
 def getBound(route, bound):
@@ -54,10 +54,13 @@ async def getRouteStop(co='lightRail'):
   csv_urls = [
       'https://notice.hkbus.app/handmade_data/lightRail/506P*.csv',
       'https://notice.hkbus.app/handmade_data/lightRail/507P*.csv',
+      'https://notice.hkbus.app/handmade_data/lightRail/610P*.csv',
       'https://notice.hkbus.app/handmade_data/lightRail/720*.csv',
       'https://notice.hkbus.app/handmade_data/lightRail/751*.csv',
       'https://notice.hkbus.app/handmade_data/lightRail/751P.csv',
-      'https://notice.hkbus.app/handmade_data/lightRail/SPR.csv',
+      'https://notice.hkbus.app/handmade_data/lightRail/901-SHL-1.csv',
+      'https://notice.hkbus.app/handmade_data/lightRail/902-SHL-1.csv',
+      'https://notice.hkbus.app/handmade_data/lightRail/907-SHL-1.csv',
       'https://opendata.mtr.com.hk/data/light_rail_routes_and_stops.csv'
   ]
 
