@@ -58,7 +58,9 @@ async def getRouteStop(co='lightRail'):
       'https://notice.hkbus.app/handmade_data/lightRail/720*.csv',
       'https://notice.hkbus.app/handmade_data/lightRail/751*.csv',
       'https://notice.hkbus.app/handmade_data/lightRail/751P.csv',
-      'https://notice.hkbus.app/handmade_data/lightRail/SPR.csv',
+      'https://notice.hkbus.app/handmade_data/lightRail/901-SHL-1.csv',
+      'https://notice.hkbus.app/handmade_data/lightRail/902-SHL-1.csv',
+      'https://notice.hkbus.app/handmade_data/lightRail/907-SHL-1.csv',
       'https://opendata.mtr.com.hk/data/light_rail_routes_and_stops.csv'
   ]
 
